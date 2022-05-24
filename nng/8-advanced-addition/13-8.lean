@@ -1,0 +1,5 @@
+induction n with d hd,
+exact zero_ne_succ(0),
+intro h,
+rw succ_eq_succ_iff at h,
+exact hd(h),

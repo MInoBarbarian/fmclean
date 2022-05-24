@@ -1,0 +1,6 @@
+cases b with d,
+refl,
+rw add_succ at H,
+exfalso,
+have h := succ_ne_zero (a + d),
+exact h(H),
