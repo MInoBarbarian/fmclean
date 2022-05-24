@@ -1,0 +1,8 @@
+rw le_iff_exists_add at hab hbc ⊢,
+cases hab with d ab,
+cases hbc with e bc,
+use (d + e),
+rw bc,
+rw ab,
+rw add_assoc,
+refl,
