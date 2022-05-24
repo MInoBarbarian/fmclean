@@ -1,0 +1,6 @@
+intros h h1 h2,
+cases b with n,
+contradiction,
+rw mul_succ at h2,
+have h3 := add_left_eq_zero h2,
+exact h(h3),
