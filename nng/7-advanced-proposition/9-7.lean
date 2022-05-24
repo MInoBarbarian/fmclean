@@ -1,0 +1,6 @@
+rw not_iff_imp_false,
+intro h,
+cases h with p np,
+exfalso,
+apply np,
+exact p,

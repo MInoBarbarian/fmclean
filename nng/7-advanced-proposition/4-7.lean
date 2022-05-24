@@ -1,0 +1,8 @@
+intros h h1,
+cases h with pq qp,
+cases h1 with qr rq,
+split,
+intro p,
+exact qr(pq(p)),
+intro r,
+exact qp(rq(r)),
