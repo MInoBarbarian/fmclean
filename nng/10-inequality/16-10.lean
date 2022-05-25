@@ -1,0 +1,6 @@
+intro h,
+split,
+apply le_of_succ_le_succ,
+exact le_succ (succ a) b h,
+intro h1,
+exact not_succ_le_self a (le_trans (succ a) b a h h1),

@@ -1,0 +1,5 @@
+have h1 := add_le_add_right h,
+rw add_comm t a,
+rw add_comm t b,
+revert t,
+exact h1,

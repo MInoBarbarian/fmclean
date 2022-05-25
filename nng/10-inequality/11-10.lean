@@ -1,0 +1,6 @@
+intros h t,
+rw le_iff_exists_add at h ⊢,
+cases h with c hc,
+use c,
+rw hc,
+simp,

@@ -1,0 +1,6 @@
+intro h,
+rw le_iff_exists_add at h ⊢,
+cases h with c hc,
+rw succ_add at hc,
+use c,
+exact succ_inj hc,
